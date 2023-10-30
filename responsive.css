@@ -1,0 +1,79 @@
+@media screen and (max-width:991px){
+    .header-two .box{
+        display: none;
+    }
+    .header .search i{
+        display: none;
+    }
+    .header .navbar .navlinks li{
+        padding: 1.7rem 1rem;
+    }
+    .service .service-row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:768px){
+    .top-header .header-one .location{
+        display: none;
+    }
+    #menuBtn{
+        display: block;
+        padding: 1rem;
+    }
+    .header .navbar .navlinks{
+        display: none;
+        animation: moving 0.5s ease;
+    }
+    @keyframes moving{
+        0%{
+            transform: translateY(-10%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .header .navbar .navlinks.toggle{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-color);
+        padding: 1rem;
+    }
+    .hero .swiper .slide p{
+        width: 100%;
+    }
+    .header .navbar .navlinks li{
+        padding: 1rem 1rem;
+    }
+    .header .navbar .navlinks li:hover{
+        background-color: transparent;
+    }
+    .header .navbar .navlinks li a:hover{
+        color: var(--main-color);
+    }
+    section p.text{
+        width: 100%;
+    }
+    .about-row .col-2 img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .top-header .header-one .phone{
+        display: none;
+    }
+    .top-header .header-one .invader{
+        padding-left: 6rem;
+    }
+    .service .service-row{
+        grid-template-columns: 1fr;
+    }
+    .about-row .col-1 .number{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 65.5%;
+}
+:root{
+    --main-color:#49d363;
+    --text-color:#3f48cc;
+    --light-color:#868690;
+    --background-color:#2c2d3f;
+}
+/* top header section design  */
+.top-header .header-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 1.5rem 12.5%;
+}
+.header-one span{
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.header-one span i{
+    color: var(--main-color);
+    padding-right: 0.5rem;
+    font-size: 1.6rem;
+}
+.top-header .header-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 2.5rem 12.5%;
+    box-shadow: 0 0 5px var(--background-color);
+}
+.header-two .box{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.header-two .box i{
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+    padding: 1rem;
+    border-radius: 50%;
+    color: #fff;
+}
+.header-two .box h5{
+    font-size: 1.3rem;
+    color: var(--light-color);
+}
+.header-two .box span{
+    color: var(--background-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.header-two button{
+    background-color: var(--background-color);
+    color: #fff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.header-two button:hover{
+    background-color: transparent;
+    color: #000;
+    border: 1px solid var(--main-color);
+}
+
+/* navbar section design  */
+.header{
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 0 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header .navbar .navlinks{
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+.header .navbar .navlinks li{
+    padding: 1.7rem 2rem;
+    cursor: pointer;
+}
+.header .navbar .navlinks li:hover{
+    background: var(--main-color);
+}
+.header .navbar .navlinks li a{
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+.header .search i{
+    color: #fff;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+#menuBtn{
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+section{
+    padding: 2.5rem 12.5%;
+}
+/* hero section design  */
+.hero{
+    width: 100%;
+    min-height: 70vh;
+    background: url('./images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.hero .swiper .slide h1{
+    font-size: 3.7rem;
+    padding-bottom: 2.7rem;
+    color: var(--background-color);
+}
+.hero .swiper .slide h1 span{
+    color: var(--main-color);
+}
+.hero .swiper .slide p{
+    width: 600px;
+    font-size: 1.3rem;
+    color: var(--background-color);
+    padding-bottom: 2.7rem;
+}
+.hero .swiper .slide button{
+    background-color: var(--main-color);
+    padding: 1.2rem 3.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+.hero .swiper .slide button:hover{
+    background-color: var(--background-color);
+}
+
+/* service section design  */
+.service{
+    width: 100%;
+    background-color: #fff;
+}
+.service .service-row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    padding-top: 5.5rem;
+}
+.service-row .col-1 img{
+    width: 70px;
+    height: 70px;
+}
+.service-row .col-1 h4{
+    font-size: 2rem;
+    color: #2c2d3f;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+.service-row .col-1 p{
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding-bottom: 1.5rem;
+}
+.service-row .col-1 a{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: var(--background-color);
+    font-weight: 500;
+}
+
+/* about section design */
+section h2{
+    font-size: 2.7rem;
+    color: var(--background-color);
+}
+section img{
+    width: 70px;
+    height: 70px;
+}
+section p.text{
+    font-size: 1.3rem;
+    width: 650px;
+    margin: auto;
+    color: var(--light-color);
+}
+.about{
+    text-align: center;
+    padding-top: 4.5rem;
+}
+.about .about-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding-top: 5.5rem;
+}
+.about-row .col-1{
+    flex: 1 1 20rem;
+    text-align: justify;
+}
+.about-row .col-1 h3{
+    font-size: 2.8rem;
+    color: var(--background-color);
+    padding-bottom: 1rem;
+}
+.about-row .col-1 h3 span{
+    color: var(--main-color);
+}
+.about-row .col-1 p{
+    color: var(--light-color);
+    font-size: 1.3rem;
+    padding-bottom: 2.6rem;
+}
+.about-row .col-1 img{
+    width: 200px;
+}
+.about-row .col-1 .number{
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.about-row .col-1 .number .count{
+    box-shadow: 0 0 5px var(--light-color);
+    padding: 1.5rem 1rem;
+    background-color: #c2e2c7;
+}
+.about-row .col-1 .number .count:hover{
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    color: #fff;
+    transform: scale(1.05);
+}
+.about-row .col-1 .number .count h4{
+    font-size: 2.8rem;
+    color: var(--background-color);
+}
+.about-row .col-1 .number .count span{
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding-bottom: 1rem;
+}
+.about-row .col-2{
+    flex: 1 1 20rem;
+    text-align: right;
+}
+.about-row .col-2 img{
+    width: 70%;
+    height: 25rem;
+    margin-bottom: 4rem;
+}
+.about-row .col-2 .details span{
+    color: var(--light-color);
+    font-size: 1.7rem;
+}
+.about-row .col-2 .details h4{
+    font-size: 2.3rem;
+    color: var(--background-color);
+    padding-bottom: 1.5rem;
+}
+.about-row .col-2 .details p{
+    color: var(--light-color);
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+}
+.about-row .col-2 .details a{
+    background-color: var(--main-color);
+    color: #ffff;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    border-radius: 40px;
+}
+.about-row .col-2 .details a:hover{
+    background-color: var(--background-color);
+}
+
+/* summery section design  */
+.summary{
+    text-align: center;
+    padding-top: 4.5rem;
+    background-color: #f6fcf8;
+    margin-top: 5.5rem;
+}
+.summary .summary-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 4rem;
+}
+.summary-row .col-1{
+    flex: 1 1 20rem;
+    text-align: left;
+}
+.summary-row .col-1 img{
+    width: 100%;
+    height: 30rem;
+}
+.summary-row .col-1 span{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+.summary-row .col-1 h3{
+    font-size: 2.6rem;
+    color: var(--background-color);
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+.summary-row .col-1 p{
+    font-size: 1.3rem;
+    color: var(--light-color);
+    padding-bottom: 3.5rem;
+}
+.summary-row .col-1 a{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+    border-radius: 40px;
+}
+.summary-row .col-1 a:hover{
+    background-color: var(--background-color);
+}
+/* team section design  */
+.team{
+    text-align: center;
+    padding-top: 4.5rem;
+}
+.team .swiper{
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 5rem;
+}
+.team .swiper .team-col{
+    box-shadow: 0 0 4px var(--light-color);
+    padding: 1rem 4rem;
+    border-radius: 5px;
+}
+.team .swiper .team-col img{
+    width: 100%;
+    padding-bottom: 1rem;
+    height: 17rem;
+}
+.team .swiper .team-col h4{
+    color: var(--background-color);
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+}
+.team .swiper .team-col span{
+    color: var(--light-color);
+    font-size: 1.3rem;
+}
+.team .swiper .team-col i{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+.team .swiper .team-col i:hover{
+    color: var(--main-color);
+}
