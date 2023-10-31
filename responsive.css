@@ -11,6 +11,12 @@
     .service .service-row{
         grid-template-columns: 1fr 1fr;
     }
+    .project .filter-content{
+        grid-template-columns: 1fr 1fr;
+    }
+    .project .filter_button button{
+        flex-grow: 1;
+    }
 }
 @media screen and (max-width:768px){
     .top-header .header-one .location{
@@ -60,6 +66,12 @@
     }
     .about-row .col-2 img{
         width: 100%;
+    }
+    .project .filter-content{
+        grid-template-columns: 1fr;
+    }
+    .filter-content .filter-col .image{
+        height: auto;
     }
 }
 

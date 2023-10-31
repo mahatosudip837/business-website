@@ -387,3 +387,103 @@ section p.text{
 .team .swiper .team-col i:hover{
     color: var(--main-color);
 }
+
+/* project section design  */
+.project{
+    text-align: center;
+    padding-top: 4.5rem;
+}
+.project .filter_button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    padding: 4.5rem 0;
+}
+.project .filter_button button{
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background-color: #fff;
+    color: var(--light-color);
+    box-shadow: 0 0 5px var(--light-color);
+    border: none;
+}
+.project .filter_button button.active{
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 0 0 8px var(--main-color);
+}
+.project .filter-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 3rem;
+}
+.project .filter-content .filter-col{
+    box-shadow: 0 0 5px var(--light-color);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.filter-content .filter-col .image{
+    width: 100%;
+    height: 17rem;
+    overflow: hidden;
+}
+.filter-content .filter-col .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.filter-content .filter-col:hover .image img{
+    transform: scale(1.05);
+}
+.filter-content .filter-col h5{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    color: var(--background-color);
+}
+.filter-content .filter-col p{
+    color: var(--light-color);
+    font-size: 1.3rem;
+}
+.tab-filter-item-container{
+    background: var(--white);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.tab-item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0 3rem;
+    transform: translateX(100%);
+    background: var(--white);
+    transition: all .5s ease-in-out;
+}
+.tab-item.select_tab{
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+    background: var(--white-light);
+    animation: fadeIn 0.6s ease-in-out;
+}
+.btn-primary{
+    background: var(--primary);
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    color: var(--white);
+    border-radius: 2rem;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
