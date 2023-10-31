@@ -1,3 +1,8 @@
+@media screen and (max-width:1200px){
+    .footer .row-two{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 @media screen and (max-width:991px){
     .header-two .box{
         display: none;
@@ -16,6 +21,15 @@
     }
     .project .filter_button button{
         flex-grow: 1;
+    }
+    .plan .plan-row{
+        grid-template-columns: 1fr 1fr;
+    }
+    .client p.text{
+        width: 100%;
+    }
+    .blog .blog-row{
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width:768px){
@@ -73,6 +87,18 @@
     .filter-content .filter-col .image{
         height: auto;
     }
+    .plan .plan-row{
+        grid-template-columns: 1fr;
+    }
+    .blog .blog-row{
+        grid-template-columns: 1fr;
+    }
+    .company .company-row{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .footer .row-two{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media screen and (max-width:550px){
@@ -87,5 +113,21 @@
     }
     .about-row .col-1 .number{
         grid-template-columns: 1fr;
+    }
+    .company .company-row{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer .row-two{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer .row-one .col-1 p{
+        width: 100%;
+    }
+    .footer .row-two .col-2 p.text{
+        width: 100%;
+    }
+    .footer-bottom .top-button a{
+        right: 1rem;
+        padding: 0.5rem;
     }
 }

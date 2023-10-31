@@ -80,3 +80,55 @@ filterBtns.forEach((btn, index) => {
 tabItems.forEach((tab, th) => {
     tabContainer.style.height = tab.scrollHeight + 'px';
 });
+
+
+// gallery section 
+var swiper = new Swiper(".myGallery", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  freeMode: true,
+  loop:true,
+  autoplay:{
+      delay:2500,
+      disableOnInteraction: false,
+  },
+  breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+});
+// client section 
+var swiper = new Swiper(".myClient", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  freeMode: true,
+  loop:true,
+  autoplay:{
+      delay:2500,
+      disableOnInteraction: false,
+  },
+  breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+    },
+});
